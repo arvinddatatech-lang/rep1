@@ -1,0 +1,258 @@
+/*
+Theme Name: KitGreen Child
+Theme URI: https://kitgreen.jwsuperthemes.com
+Template: kitgreen
+Author: the JWSThemes team
+Author URI: https://themeforest.net/user/jwsthemes
+Description: KitGreen is billed as a simple, flexible, and stylish WordPress theme for design and kitchen websites. The demo version of this theme has been set up perfectly to help you portray your business in a classy and professional way.
+Tags: two-columns,three-columns,left-sidebar,right-sidebar,custom-background,custom-header,custom-menu,editor-style,featured-images,flexible-header,full-width-template,microformats,post-formats,rtl-language-support,sticky-post,theme-options,translation-ready,accessibility-ready
+Version: 3.1.2
+Updated: 2019-01-10 04:40:43
+*/
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.generic-anchor {
+  color: #41CA56;
+}
+.generic-anchor:visited {
+  color: #8DB9ED;
+}
+.generic-anchor:hover {
+  color: #ccc;
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 10em "Oswald", sans-serif;
+  color: #9b9b9b;
+  line-height: 1;
+}
+footer {
+  background: #373737;
+  margin-top: auto;
+  width: 100%;
+}
+.footer-list-top {
+  width: 33.333%;
+}
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+  font: 2.3vw "Oswald", sans-serif;
+}
+.footer-list-anchor {
+  font: 1.3em "Open Sans", sans-serif;
+}
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+  padding: 0 20px;
+}
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff;
+}
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff;
+}
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em;
+  }
+  .footer-list-anchor {
+    font-size: 1.1em;
+  }
+  .footer-social-connect {
+    font-size: 2.5em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em;
+  }
+  .footer-list-top {
+    width: 100%;
+  }
+  .footer-list-header {
+    font-size: 3em;
+  }
+  .footer-list-anchor {
+    font-size: 1.5em;
+  }
+  .footer-social-section {
+    justify-content: center;
+  }
+  .footer-social-section::after {
+    top: 25%;
+  }
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px;
+  }
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer-bottom-rights {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em;
+  }
+  .footer-list-anchor {
+    font-size: 1.2em;
+  }
+  .footer-social-connect {
+    font-size: 2.4em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+
+       
+
+        .footer-social-icons-wrapper a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-social-icons-wrapper a i.fa-facebook {
+            color: #3b5998;
+        }
+
+        .footer-social-icons-wrapper a i.fa-twitter {
+            color: #1da1f2;
+        }
+
+        .footer-social-icons-wrapper a i.fa-instagram {
+            color: #e4405f;
+        }
+        .footer-social-icons-wrapper a i.fa-pinterest {
+            color: #e4405f;
+        }
+         .footer-social-icons-wrapper a i.fa-youtube {
+            color: #e4405f;
+            padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+        }
+  .footer-social-icons-wrapper a:hover i.fa-youtube , .footer-social-icons-wrapper a:hover i.fa-pinterest , 
+  .footer-social-icons-wrapper a:hover i.fa-instagram  ,
+  .footer-social-icons-wrapper a:hover i.fa-twitter , .footer-social-icons-wrapper a:hover i.fa-facebook 
+          {
+             transform: scale(1.2);
+             transition: transform 330ms ease-in-out;
+        }
+
+
+        
+
+.menu-item {
+    background-color: #b5f5be;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow:#c6d3c8;
+    border:1px solid black;
+
+}
+#jws_header .sticky-wrapper .menu_nav .mainmenu>.nav>li {   
+    height: 50px;
+}
+#jws_header .sticky-wrapper .menu_nav .mainmenu>.nav>li > a {
+    margin-top: -39px;
+}

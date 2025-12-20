@@ -1,0 +1,103 @@
+
+.threesixty {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.threesixty .threesixty_images {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.threesixty .threesixty_images img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.threesixty .threesixty_images img.previous-image {
+  visibility: hidden;
+  /*
+           Do not put here any other styles.
+           It causes massive recalc / repaints and image flickering,
+           especially on Firefox.
+        */
+
+}
+.threesixty .threesixty_images img.current-image {
+  visibility: visible;
+  /*
+           Do not put here any other styles.
+           It causes massive recalc / repaints and image flickering,
+           especially on Firefox.
+        */
+
+}
+.threesixty .spinner {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.threesixty .spinner span {
+  font-family: Arial, "MS Trebuchet", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #FFF;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+}
+.threesixty .nav_bar {
+     position: absolute;
+    top: 10px;
+    right: 50%;
+    z-index: 11;
+    transform: translateX(50%);
+}
+.threesixty .nav_bar a {
+      display: inline-block;
+    text-decoration: none;
+    width: 70px;
+    font-size: 0;
+    text-align: center;
+}
+.threesixty .nav_bar a:after {
+      font-family: 'Pe-icon-7-stroke';
+    position: absolute;
+    color: #252525;
+    font-size: 50px;
+}
+.threesixty .nav_bar a.nav_bar_play:after {
+      content: "\e624";
+}
+.threesixty .nav_bar a.nav_bar_previous:after {
+content: "\e686"; 
+}
+.threesixty .nav_bar a.nav_bar_stop:after {
+content: "\e680";
+}
+.threesixty .nav_bar a.nav_bar_next:after {
+     content: "\e684";
+}
+/* html */
+.threesixty:-webkit-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
+.threesixty:-moz-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
