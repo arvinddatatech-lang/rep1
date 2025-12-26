@@ -100,3 +100,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+define( 'WP_AUTO_UPDATE_CORE', false );
+add_filter( 'auto_update_theme', '__return_false' );
+add_filter( 'auto_update_plugin', '__return_false' );
